@@ -1,0 +1,8 @@
+Requirements:
+
+    You need to install ibus-table first.
+
+Introduction:
+    
+    ibus-table-cangjie provide CangJie5 input method on IBus Table under
+    IBus framework.
