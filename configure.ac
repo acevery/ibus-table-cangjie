@@ -52,6 +52,7 @@ AC_CONFIG_FILES(Makefile
 icons/Makefile
 tables/Makefile
 m4/Makefile
+ibus-table-cangjie.spec
 )
 
 AC_OUTPUT
