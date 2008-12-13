@@ -9,6 +9,9 @@
 ### This file must be encoded into UTF-8.
 
 ### ChangeLogs
+### Yu Yuwei <acevery@gmail.com> | Date: 2008-12-14
+### - Do not dynamic adjust phrase frequency
+###
 ### Caius Chance <cchance AT redhat DOT com> | Date: 2008-08-08
 ### - Converted into scim-tables format.
 ### - Added default frequency value.
@@ -24,12 +27,12 @@ BEGIN_DEFINITION
 
 ### An unique id to distinguish this table among others.
 ### Use uuidgen to generate this kind of id.
-UUID = 12cb2711-6225-49ca-bde4-472d3cf8aaef
+UUID = 12cb2711-1235-49ea-bde4-472d3cf8aaef
 
 ### A unique number indicates the version of this file.
 ### For example the last modified date of this file.
 ### This number must be less than 2^32.
-SERIAL_NUMBER = 20081029
+SERIAL_NUMBER = 20081214
 
 ICON = cangjie5.svg
 ### ICON = /usr/share/scim/icons/CangJie5.png
@@ -69,7 +72,7 @@ AUTO_COMMIT = FALSE
 AUTO_SPLIT = TRUE
 
 ### If true then the phrases' frequencies will be adjusted dynamically.
-DYNAMIC_ADJUST = TRUE 
+DYNAMIC_ADJUST = FALSE
 
 ### If true then the preedit area will be filled up by the current candidate 
 ### phrase automatically.
