@@ -46,6 +46,20 @@ AC_ARG_VAR([IBUS_TABLE_CREATEDB],[[ibus-table-createdb, which generate db]])
 AC_PATH_PROG([IBUS_TABLE_CREATEDB],[ibus-table-createdb],
         [AC_MSG_ERROR([ibus-table-createdb not found.])])
 
+# choose table
+AC_ARG_ENABLE([cangjie5],
+    [AC_HELP_STRING([--enable-cangjie5],
+        [Generate CangJie5 Engine])], ,
+    [enable_cangjie5=yes])
+
+AM_CONDITIONAL([IBUS_TABLE_BUILD_CANGJIE5],[test x"$enable_cangjie5" != x"no"])
+
+AC_ARG_ENABLE([cangjie3],
+    [AC_HELP_STRING([--enable-cangjie3],
+        [Generate CangJie3 Engine])], ,
+    [enable_cangjie3=no])
+
+AM_CONDITIONAL([IBUS_TABLE_BUILD_CANGJIE3],[test x"$enable_cangjie3" != x"no"])
 
 # OUTPUT files
 AC_CONFIG_FILES(Makefile
@@ -61,5 +75,7 @@ AC_MSG_RESULT([
 Build options:
   Version                   $VERSION
   Install prefix            $prefix
+  Build CangJie3            $enable_cangjie3
+  Build CangJie5            $enable_cangjie5
 ])
 

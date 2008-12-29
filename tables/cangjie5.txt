@@ -27,7 +27,7 @@ BEGIN_DEFINITION
 
 ### An unique id to distinguish this table among others.
 ### Use uuidgen to generate this kind of id.
-UUID = 12cb2711-1235-49ea-bde4-472d3cf8aaef
+UUID = 12c32711-1235-49aa-b1e4-472d3cf8aaef
 
 ### A unique number indicates the version of this file.
 ### For example the last modified date of this file.
@@ -51,32 +51,8 @@ LANGUAGES = zh_TW,zh_HK,zh_CN,zh_SG
 ### Prompt string to be displayed in the status area.
 STATUS_PROMPT = 中
 
-### The Keyboard Layout used by this table. Unset or set to "Unknown" to 
-### accept any kind of layouts.
-###KEYBOARD_LAYOUT = US_Default
-KEYBOARD_LAYOUT = Unknown
-
-### If true then the first candidate phrase
-### will be selected automatically during inputing.
-AUTO_SELECT = FALSE
-
-### If true then a multi wildcard will be appended
-### at the end of inputing string automatically.
-AUTO_WILDCARD = TRUE
-
-### If true then the result string will be committed to client automatically.
-### This should be used with AUTO_SELECT = TRUE.
-AUTO_COMMIT = FALSE
-
-### If true then the key will be splitted during inputing automatically.
-AUTO_SPLIT = TRUE
-
 ### If true then the phrases' frequencies will be adjusted dynamically.
 DYNAMIC_ADJUST = FALSE
-
-### If true then the preedit area will be filled up by the current candidate 
-### phrase automatically.
-AUTO_FILL = FALSE
 
 ### Use full width punctuation by default
 DEF_FULL_WIDTH_PUNCT = TRUE
@@ -106,7 +82,7 @@ PINYIN_MODE = TRUE
 
 ### If true then the phrases' frequencies will be adjusted dynamically
 ### according your using frequency.
-DYNAMIC_ADJUST = TRUE 
+DYNAMIC_ADJUST = FALSE 
  
 ### Define the prompts of each valid input char.
 BEGIN_CHAR_PROMPTS_DEFINITION

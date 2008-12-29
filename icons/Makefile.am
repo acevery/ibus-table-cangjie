@@ -18,13 +18,21 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
+icons_DATA = 
 
-icons_DATA = \
-	cangjie5.svg \
-	$(NULL)
+if IBUS_TABLE_BUILD_CANGJIE3
+icons_DATA += cangjie3.svg
+endif
+
+if IBUS_TABLE_BUILD_CANGJIE5
+icons_DATA += cangjie5.svg
+endif
+
+icons_DATA += $(NULL)
 
 iconsdir = $(datadir)/ibus-table/icons
 
 EXTRA_DIST = \
+	cangjie3.svg \
 	cangjie5.svg \
 	$(NULL)
