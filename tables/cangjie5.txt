@@ -49,7 +49,7 @@ NAME.zh_HK = 倉頡第五代
 LANGUAGES = zh_TW,zh_HK,zh_CN,zh_SG
 
 ### Prompt string to be displayed in the status area.
-STATUS_PROMPT = 中
+STATUS_PROMPT = CN
 
 ### If true then the phrases' frequencies will be adjusted dynamically.
 DYNAMIC_ADJUST = FALSE
