@@ -30,7 +30,7 @@ UUID = ddac9833-9e7a-46e4-9e84-aeca6cb721c2
 SERIAL_NUMBER = 2009021601
 
 ### ICON = @SCIM_ICONDIR@/CangJie3.png
-ICON = quick3.svg
+ICON = quick3.png
 
 ### The default name of this table
 NAME = Quick 3
