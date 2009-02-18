@@ -19,7 +19,7 @@ BEGIN_DEFINITION
 
 ### An unique id to distinguish this table among others.
 ### Use uuidgen to generate this kind of id.
-UUID = 5da9f4ef-cc1e-41af-b1a3-7bd4ac0aeb51
+UUID = 5da9f4ef-ce1e-41af-b2a3-7bd4ac05eb51
 
 ### A unique number indicates the version of this file.
 ### For example the last modified date of this file.
@@ -47,7 +47,7 @@ LANGUAGES = zh_TW,zh_HK,zh_CN,zh_SG
 STATUS_PROMPT = CN
 
 ### If true then the phrases' frequencies will be adjusted dynamically.
-DYNAMIC_ADJUST = FALSE 
+DYNAMIC_ADJUST = TRUE
 
 ### Use full width punctuation by default
 DEF_FULL_WIDTH_PUNCT = TRUE
@@ -70,6 +70,8 @@ PINYIN_MODE = TRUE
 ### You have to define the word construction rules below.
 ### For input methods which do not input phrases, set this to False
 USER_CAN_DEFINE_PHRASE = FALSE
+
+LAYOUT = us
 
 ### Define the prompts of each valid input char.
 BEGIN_CHAR_PROMPTS_DEFINITION
