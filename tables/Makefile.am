@@ -25,23 +25,18 @@ createdb = \
 	$(IBUS_TABLE_CREATEDB) 
 
 tables_DATA =
-engine_DATA =
 
 if IBUS_TABLE_BUILD_CANGJIE3
 tables_DATA += cangjie3.db
-engine_DATA += cangjie3.engine
 endif
 
 if IBUS_TABLE_BUILD_CANGJIE5
 tables_DATA += cangjie5.db
-engine_DATA += cangjie5.engine
 endif
 
 tables_DATA += $(NULL)
-engine_DATA += $(NULL)
 
 tablesdir = $(datadir)/ibus-table/tables
-enginedir = $(datadir)/ibus/engine
 
 EXTRA_DIST = \
 	cangjie3.txt \
@@ -50,11 +45,7 @@ EXTRA_DIST = \
 
 DISTCLEANFILES = \
 	*.db \
-	*.engine \
 	$(NULL)
-
-.db.engine:
-	@echo "$@ is done:)"
 
 .txt.db:
 	$(createdb) -n $@ -s $<
