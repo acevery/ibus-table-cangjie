@@ -62,6 +62,20 @@ AC_ARG_ENABLE([cangjie3],
 
 AM_CONDITIONAL([IBUS_TABLE_BUILD_CANGJIE3],[test x"$enable_cangjie3" != x"no"])
 
+AC_ARG_ENABLE([quick5],
+    [AC_HELP_STRING([--enable-quick5],
+        [Generate Quick5 Engine])], ,
+    [enable_quick5=yes])
+
+AM_CONDITIONAL([IBUS_TABLE_BUILD_QUICK5],[test x"$enable_quick5" != x"no"])
+
+AC_ARG_ENABLE([quick3],
+    [AC_HELP_STRING([--enable-quick3],
+        [Generate Quick3 Engine])], ,
+    [enable_quick3=yes])
+
+AM_CONDITIONAL([IBUS_TABLE_BUILD_QUICK3],[test x"$enable_quick3" != x"no"])
+
 # OUTPUT files
 AC_CONFIG_FILES(Makefile
 icons/Makefile

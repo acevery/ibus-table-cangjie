@@ -28,6 +28,14 @@ if IBUS_TABLE_BUILD_CANGJIE5
 icons_DATA += cangjie5.svg
 endif
 
+if IBUS_TABLE_BUILD_QUICK3
+icons_DATA += quick3.png
+endif
+
+if IBUS_TABLE_BUILD_QUICK5
+icons_DATA += quick5.png
+endif
+
 icons_DATA += $(NULL)
 
 iconsdir = $(datadir)/ibus-table/icons
@@ -35,4 +43,9 @@ iconsdir = $(datadir)/ibus-table/icons
 EXTRA_DIST = \
 	cangjie3.svg \
 	cangjie5.svg \
+	quick3.png \
+	quick5.png \
 	$(NULL)
+icons_DATA += $(NULL)
+
+iconsdir = $(datadir)/ibus-table/icons

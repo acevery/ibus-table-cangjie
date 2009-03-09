@@ -34,6 +34,14 @@ if IBUS_TABLE_BUILD_CANGJIE5
 tables_DATA += cangjie5.db
 endif
 
+if IBUS_TABLE_BUILD_QUICK3
+tables_DATA += quick3.db
+endif
+
+if IBUS_TABLE_BUILD_QUICK5
+tables_DATA += quick5.db
+endif
+
 tables_DATA += $(NULL)
 
 tablesdir = $(datadir)/ibus-table/tables
@@ -41,6 +49,8 @@ tablesdir = $(datadir)/ibus-table/tables
 EXTRA_DIST = \
 	cangjie3.txt \
 	cangjie5.txt \
+	quick3.txt \
+	quick5.txt \
 	$(NULL)
 
 DISTCLEANFILES = \
