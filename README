@@ -4,5 +4,9 @@ Requirements:
 
 Introduction:
     
-    ibus-table-cangjie provide CangJie5 input method on IBus Table under
-    IBus framework.
+    ibus-table-cangjie provide CangJie5, CaneJie3, Quick5, Quick3 input method 
+    on IBus Table under IBus framework.
+
+    CangJie5, CaneJie3, Quick5, Quick3 tables are released under Public Domain
+    and their icons are released under GPLv2+ originally devired from 
+    scim-tables-chinese package.
