@@ -27,12 +27,12 @@ BEGIN_DEFINITION
 
 ### An unique id to distinguish this table among others.
 ### Use uuidgen to generate this kind of id.
-UUID = 12c32711-1235-49aa-b1e4-472d3cf8aaef
+UUID = 12c35711-1235-49aa-b144-472d1cf81aef
 
 ### A unique number indicates the version of this file.
 ### For example the last modified date of this file.
 ### This number must be less than 2^32.
-SERIAL_NUMBER = 20081214
+SERIAL_NUMBER = 20090218
 
 ICON = cangjie5.svg
 ### ICON = /usr/share/scim/icons/CangJie5.png
@@ -82,7 +82,9 @@ PINYIN_MODE = TRUE
 
 ### If true then the phrases' frequencies will be adjusted dynamically
 ### according your using frequency.
-DYNAMIC_ADJUST = FALSE 
+DYNAMIC_ADJUST = TRUE 
+
+LAYOUT = us
  
 ### Define the prompts of each valid input char.
 BEGIN_CHAR_PROMPTS_DEFINITION

@@ -2,7 +2,7 @@
 #
 # ibus-tables-cangjie - The CangJie for IBus Table
 #
-# Copyright (c) 2008-2008 Yu Yuwei <acevery@gmail.com>
+# Copyright (c) 2008-2009 Yu Yuwei <acevery@gmail.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
