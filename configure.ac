@@ -58,7 +58,7 @@ AM_CONDITIONAL([IBUS_TABLE_BUILD_CANGJIE5],[test x"$enable_cangjie5" != x"no"])
 AC_ARG_ENABLE([cangjie3],
     [AC_HELP_STRING([--enable-cangjie3],
         [Generate CangJie3 Engine])], ,
-    [enable_cangjie3=no])
+    [enable_cangjie3=yes])
 
 AM_CONDITIONAL([IBUS_TABLE_BUILD_CANGJIE3],[test x"$enable_cangjie3" != x"no"])
 
