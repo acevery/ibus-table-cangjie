@@ -92,5 +92,7 @@ Build options:
   Install prefix            $prefix
   Build CangJie3            $enable_cangjie3
   Build CangJie5            $enable_cangjie5
+  Build Quick3              $enable_quick3
+  Build Quick5              $enable_quick5
 ])
 
